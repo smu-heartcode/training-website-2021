@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Corinthia:wght@700&family=Roboto:wght@100&display=swap');
+
+body{
+    text-align: center;
+    position: relative;
+    background-color: rgb(248, 241, 148);
+}
+#stories img{
+    height: 500px;
+    object-fit: cover;
+}
+
+a:link{
+color:pink;
+}
+a:visited{
+color:pink;
+}
+a:hover{
+color:pink;
+}
+a:active{
+color:pink;
+}
+
+.btn{
+    padding: 10px;
+    width: 180px;
+
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+#about img{
+    height: 500px;
+    object-fit: cover;
+}
+
+#about{
+    background-color: rgb(247, 218, 123);
+}
+
+#home{
+    background-image: url(Files/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    height: 1000px;
+    font-family: 'Chewy', cursive;
+    /* vertical-align: middle; */
+
+
+}
+
+#helpline{
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+#helpline img{
+    height: 12cm;
+}
+
+#help-a-friend{
+     background-image: url(Files/To\ help\ a\ friend.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     padding-bottom: 3cm;
+     padding-top: 3cm;
+     height: 1000px;
+}
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.carousel-inner {
+    max-height: 700px;
+    height: 100% !important;
+    /* align-items: center; */
+    width: 90%;
+    margin: auto;
+}
+
+/* Button */
+
+
+/* Quotes */
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blockquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.blockquote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+  
+  content:"\f10d";
+  font-size: 200px;
+  color: rgba(247, 114, 74, 0.1);
+   
+}
+
+.blockquote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid #bf0024;
+    height: 3px;
+    width: 200px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #faa508;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #f8b705 ;
+  line-height:1.6;
+  position: relative;
+  background:#fceba3;
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#af6f33;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:hsl(32, 100%, 52%);
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/* Theme Toggler */
+/* * {
+	box-sizing: border-box;
+} */
+
+/* body {
+	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+} */
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+/* body {
+  padding: 0;
+  margin: 0; 
+  height: 100vh;
+  background: #18191f;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#footer{
+  padding: top 4rem; ;
+  margin: 0; 
+  /* height: 100vh; */
+  background: #18191f;
+  font-family: 'Poppins', sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+}
+
+h4 {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  margin: 0 4px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* div:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+} */
+
+input[type="checkbox"]:checked ~ h4 {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

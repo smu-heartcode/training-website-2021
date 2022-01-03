@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autism</title>
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+      #landing {
+        padding-top: 10rem;
+        /* padding-bottom: calc(10rem - 72px); */
+        background-image: url(images/landing2.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 100vh;
+        /* opacity: 0.75; */
+      }
+      nav{
+        display:flex;
+        justify-content: center;
+      }
+
+      .landing {
+        opacity: 1;
+      }
+
+      .desc {
+        color: rgb(252, 85, 7);
+      }
+      .orangehighlight{
+        color: rgb(255, 145, 0)
+      }
+
+      .landing {
+        background: rgba(255, 255, 255, 0.59);
+        transition: all 0.35s ease;
+
+      }
+
+      .landing:hover{
+        background: rgba(255, 255, 255, 0.809);
+
+      }
+
+      .bluecolor {
+        color: #0e66da;
+        font-weight: bolder;
+      }
+
+      .hovereffect {
+        transition: all 0.35s ease;
+      }
+
+      .hovereffect:hover {
+        box-shadow: none;
+        transform: translateY(5px);
+      }
+
+      #challenge {
+        background: rgb(255, 230, 183);
+      }
+      .navcontainer{
+        display:flex;
+        justify-content: center;
+      }
+
+      .nav-item{
+        font-size: 20px;
+      }
+
+      .action{
+        
+        transition: all 0.35s ease;
+
+
+      }
+
+      .action:hover{
+
+        background: #0e66da;
+        color: orange;
+
+        
+      }
+      .nav-link, .logo{
+        transition: all 0.35s ease;
+      }
+
+      .nav-link:hover,.logo:hover{
+        background: #0e66da;
+        padding-left: 10px;
+        padding-right: 10px;
+      
+        border-radius: 50px;
+        color: orange
+        !important;
+      }
+
+     
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning navheader sticky-top">
+      <div class="mx-auto d-flex ">
+        <a class="navbar-brand d-flex justify-content-center align-items-center logo" href="#">
+          <img src="images/puzzle.png" alt="" width="50" height="50" class="align-text-top">
+          <p class="px-2 m-0">Autism Awareness</p>
+
+        </a>
+          <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#challenge">Challenges</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#action">Action</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                 
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!-- Landing page -->
+    <section id="landing">
+      <div class="container-fluid text-center landing">
+        <div class="row">
+          <div class="col pt-5">
+            <h1 class="bluecolor">Dealing with Autism</h1>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col">
+            <h3 class="desc">
+              <b>
+                In today's society, normal people treat autistic people
+              differently and this should not be the case. There is a need for
+              us to treat them equally.
+              </b>
+                
+            </h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col pb-3">
+            <a
+              class="btn btn-warning rounded-pill p-2 bluecolor action"
+              href="#challenge"
+              role="button"
+              ><b class="p-4"> Find out how</b></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges they face -->
+    <section id="challenge">
+      <h1 class="text-center py-5 bluecolor fw-bolder">
+        <u class="orangehighlight">Challenges</u> faced by autistic people
+      </h1>
+      <div class="container mt-5" style="margin-bottom: 0px">
+        <div class="row text-center">
+          <div class="col hovereffect">
+            <!-- Image goes here -->
+            <img
+              class="img-fluid"
+              src="images/communication.png"
+              alt="communication"
+            />
+
+            <h5 class="mt-2">Challenge 1</h5>
+
+            <p>Difficulty in verbal or non-verbal communications</p>
+          </div>
+          <div class="col hovereffect">
+            <img class="img-fluid" src="images/angry.png" alt="anger" />
+            <h5 class="mt-2">Challenge 2</h5>
+            <p>Aggressive behaviour</p>
+          </div>
+          <div class="col hovereffect">
+            <img class="img-fluid" src="images/band-aid.png" alt="hurt" />
+
+            <h5 class="mt-2">Challenge 3</h5>
+
+            <p>Stimming and/or self-injurious behaviour</p>
+          </div>
+          <div class="col hovereffect">
+            <img class="img-fluid" src="images/stubborn.png" alt="resistance" />
+
+            <h5 class="mt-2">Challenge 4</h5>
+            <p>Rigid routines and resistance to change</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What they can do -->
+    <section id="action">
+      <!-- How to treat them normally -->
+
+      <div class="container-fluid">
+        <div class="row" style="background-color: lightblue" ;>
+          <h1 class="text-center bluecolor p-5">How <u class="orangehighlight">WE</u> can treat autistic people <u class="orangehighlight">normally</u></h1>
+
+          <div
+            class="
+              col-4
+              d-flex
+              align-items-center
+              flex-column
+              justify-content-center
+            "
+          >
+            <img class="img-fluid" src="images/hug.png" alt="anger" />
+            <p style="text-align: center"><b>BE PATIENT</b></p>
+          </div>
+
+          <div class="col-8 d-flex align-items-center justify-content-center">
+            <p style="text-align: center; margin: auto">
+              <b
+                ><h3 class="text-center">
+                  Be sure to talk about or reward good behavior often. Be
+                  generous with compliments for good behavior.
+                </h3></b
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Interact through physical activity -->
+        <div class="row" style="background-color: rgb(245, 208, 88)">
+          <!-- Left side -->
+          <div class="col-8 d-flex align-items-center py-5">
+            <p style="text-align: center; margin: auto">
+              <b
+                ><h3 class="text-center">
+                  Running around and playing outside may be a better way of
+                  sharing time together. it will also let them relax and feel
+                  calmer.
+                </h3></b
+              >
+            </p>
+          </div>
+
+          <!-- Right side -->
+          <div class="col-4 py-5">
+            <img class="img-fluid" src="images/workout.png" alt="exercise" />
+            <p><b>INTERACT THROUGH PHYSICAL ACTIVITY</b></p>
+          </div>
+        </div>
+
+        <!-- Be Persistent but resilent -->
+        <div class="row" style="background-color: violet">
+          <div
+            class="
+              col-4
+              d-flex
+              align-items-center
+              justify-content-center
+              flex-column
+            "
+          >
+            <img class="img-fluid" src="images/resilient.png" alt="anger" />
+            <p><b>BE PERSISTENT BUT RESILIENT</b></p>
+          </div>
+
+          <div class="col-8 d-flex align-items-center justify-content-center">
+            <p style="text-align: center">
+              <b
+                ><h3>
+                  Don't let your feelings get hurt if they do not respond to you
+                  as you'd like. While their responses may be blunt, they do not
+                  mean it.
+                </h3></b
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row " style="background-color: yellow;">
+          
+          <div class="col-8 d-flex align-items-center justify-content-center" >
+            <p style = "text-align: center;"><b><h3>Be sure to talk about or reward good behaviour often. Be generous with compliments for good behaviour.</h3></b></p>
+          </div>
+
+          <div class="col-4 d-flex align-items-center justify-content-center flex-column">
+            <img  src="images/happy.png" alt="exercise" />
+            <p ><b>ALWAYS STAY POSITIVE</b></p>
+        </div>
+
+        </div>
+      </div>
+
+
+    
+
+    <!-- Actual thing i want to put -->
+    <!-- Im not really sure why the row would overextend like one cock -->
+
+    
+    </section>
+
+    <section id="about">
+      <h1 class="about text-center p-5 bluecolor">Meet the team</h1>
+
+      <div class="container text-center py-5">
+        <div class="row">
+          <div class="col">
+            <h5>Created By</h5>
+
+            <img
+              src="images/chengfai.png"
+              style="height: 200px; width: 200px"
+              class="rounded-circle img-fluid border border-black hovereffect"
+              alt="jiepeng"
+            />
+            <h5 class="mt-3">Cheng Fai</h5>
+          </div>
+
+          <div class="col">
+            <h5>Assisted By</h5>
+            <img
+              src="images/jp.png"
+              class="rounded-circle img-fluid border-black hovereffect"
+              style="height: 200px; width: 200px"
+              alt="jiepeng"
+            />
+            <h5 class="mt-3">Jie Peng</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="footer-basic bg-warning">
+      <footer class="text-center">
+        <p class="copyright m-0 p-5">Copyright © 2021</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
+

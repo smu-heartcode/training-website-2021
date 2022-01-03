@@ -1,0 +1,61 @@
+body {
+  position: relative;
+  background-image: url("images/rainbow-gradient-blurred-wallpaper.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+html {
+  height: 100%;
+}
+nav ul li {
+  border-style: solid;
+}
+nav ul li a {
+  color: violet;
+}
+.navbar-brand {
+  border-style: solid;
+  background-color: rgb(255, 23, 66);
+}
+.text-container {
+  text-align: center;
+  font: 2.25em sans-serif;
+  margin-top: 30px;
+}
+.content-body {
+  font: 1.5em sans-serif;
+  text-align: center;
+}
+.jumbotron {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  margin-top: 70px;
+}
+nav {
+  background-color: rgba(255, 179, 193, 1);
+}
+.content-body {
+  font-style: italic;
+}
+.SecondPage {
+  
+  text-align: center;
+  font-size: 25px;
+  
+}
+.ThirdPage{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 25px;
+}
+.FourthPage{
+    margin-top: 5%;
+    text-align: center;
+    
+}

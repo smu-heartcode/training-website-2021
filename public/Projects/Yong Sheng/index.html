@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muscle Dystrophy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+
+  <script src="http s://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b8981fb12b.js" crossorigin="anonymous"></script>
+
+  <style>
+    #sidenav {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- side bar/ page 0 -->
+  <button onclick="change_nav_status()" onmouseover="show_nav()" onmouseout="update_change()" id="navbtn"><i
+      class="fas fa-bars"></i></button>
+
+  <div id="sidenav">
+    <div class="flex-shrink-0 p-3" style="width: 280px; height : 100vh">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <svg class="bi me-2" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-5 fw-semibold" id="sidebartitle">Muscular dystrophy</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#home-collapse" aria-expanded="true">
+
+            <a class="nava" href="#start">Home</a>
+          </button>
+
+        </li>
+        <hr class="navline">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#dashboard-collapse" aria-expanded="false">
+            <a class="nava" href="#page2"> Why I started this webpage</a>
+          </button>
+
+        </li>
+        <hr class="navline">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#orders-collapse" aria-expanded="false">
+            <a class="nava" href="#Linked">What is muscular dystrophy</a>
+          </button>
+        </li>
+        <hr class="navline">
+
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#orders-collapse" aria-expanded="false">
+            <a class="nava" href="#Hello">The different types of muscular dystrophy</a>
+          </button>
+
+        </li>
+        <hr class="navline">
+
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#orders-collapse" aria-expanded="false">
+            <a class="nava" href="#World">How you can help</a>
+          </button>
+
+        </li>
+
+        <hr class="navline">
+        <li class="mb-1" style="margin-bottom: 40px;">
+          <br><br><br><br><br><br><br><br>
+        <li class="border-top my-3"></li>
+        <p>Coded by Yong Sheng and Paul</p>
+
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="container" id="start" onclick="hide_nav()">
+
+    <!-- jumbotron(page 1)-->
+    <div id="page1" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Muscular dystrophy</h1>
+        <p class="lead">Hopefully you can learn more about musuclar dystrophy through this website! If you do feel
+          passionate after learning about muscular dystrophy do feel free to help in whatever way you can!</p>
+
+        <!-- button on jumbotron -->
+        <button class="btn-secondary  learnmore" id="learnmore">
+          <a href="#learn_more" class="nostyle">Learn more</a>
+        </button>
+      </div>
+      <hr>
+    </div>
+
+    <!--Page 2  -->
+    <div id="page2">
+      <h1>Why I started this page</h1>
+      <h2>Where it all started...(prologue 1)</h2>
+      <p>the first time i encountered someone with muscular dystrophy was back in primary school back in Primary 4. Back
+        then my school was collaberating on a Values In Action(VIA) art project with a special needs school. <a
+          class="nostyle2" href="https://www.rainbowcentre.org.sg/about-us/">(Rainbow Centre)</a>. </p> <p>Through this
+      collaboration, I was able to learn a lot about muscular dystrophy as my partner had muscular dystrophy.</p>
+      <hr>
+      <h2>Prologue 2</h2>
+      <p>Recently as part of my school's VIA in secondary 3 and 4,me and my groupmates wanted to raise awareness about
+        muscular dystrophy seeing that many of my groupmates had heard of it and knew people with this form of
+        disability. However, due to lack of information online and physcially we ended up changing our project.</p>
+      <hr>
+      <h2>Resolution</h2>
+      <p>Now given this chance once again, I decided to not let this chance slip by and to raise awareness for a rather
+        uncommon and unknown issue in society.</p>
+      <hr>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3">
+      <h1>What is muscular dystrophy?</h1>
+      <div class="row">
+        <div id="learn_more"></div>
+        <div class="col-6">
+          <iframe width="600" height="400" src="https://www.youtube.com/embed/CkbaEjpxQ3g"
+            title="YouTube video player" frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="col-6">
+          <iframe width="670" height="400" src="https://www.youtube.com/embed/-gvVkvVkkiE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="col-6">
+          <h2>This video highlights the troubles of people with muscular dystrophy</h2>
+          <p>As seen in the video, muscular dystrophy affects them in mant ways in their day to day life.However,they
+            still find ways to adapt and overcome their challenges.</p>
+          </div>
+
+          <h2>This video shows mainly the effects of duchenne-muscular-dystrophy</h2>
+          <p>With many people suffering from this disease, having learnt a little more about it I hope that you will do a
+            little bit to help people sufering from this disease be it via donation or volunteering!</p>
+        
+        <div class="col">
+          <iframe width="740" height="416" src="https://www.youtube.com/embed/Ebu8W8Osuxk" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="Page4">
+    <div id="Linked">
+      <h3>Besides that, here are more facts about muscular dystrophy.</h3>
+      <p>There are many different types of musuclar dystrophy, being 10 main subdivisions of muscular dystrophy.Here are
+        some facts about these general subdivisions of each form of muscular dystrophy.Mainly summarising the muscles
+        and general area it affects and symptoms. Muscular dystrophy mainly occurs in males more so than females and is
+        inherited. </p>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-3">
+        <div class="card">
+          <div id="Hello" class="card-header">
+            The Most common type diagnosed in childhood, but still rare being 6 in every 100,000 people
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Duchenne Muscular dystrophy</h5>
+            <p class="card-text">The most prominent type of muscular dystrophy, the most harmful one as well. Symptoms
+              usually are visible at ages 2-3, usually at later stages of their lifes in 20-30's which are rare cases,
+              they require assistance with even their breathing.</p>
+            <a href="https://www.mda.org/disease/duchenne-muscular-dystrophy#gsc.tab=0&gsc.sort="
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header">
+            Despite it's similarities to duchenne, the becker form is less severe in terms of its' impacts..
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Becker muscular dystrophy</h5>
+            <p class="card-text">Usually confused with duchenne as they have similar symptoms however,people who suffer
+              from becker muscular dystrophy usually do not require as much aid as those with duchenne muscular
+              dystrophy</p>
+            <a href="https://www.mda.org/disease/becker-muscular-dystrophy" class="btn btn-primary  learnmore">Learn
+              more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header">
+            There are more than 30 different mutations of this disease.
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Congenital muscular dystrophy</h5>
+            <p class="card-text">This form of muscular dystrophy is ussually visable or obvious near birth.Infants who
+              suffer from it usually experience hypotonia or a lack of muscle tone. Also experiencing slower rates of
+              reaching normal motor milestones like walking and crawling.</p>
+            <a href="https://www.mda.org/disease/congenital-muscular-dystrophy" class="btn btn-primary  learnmore">Learn
+              more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header">
+            The most common type of muscular dystrophy diagnosed in adults
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Myotonic muscular dystrophy</h5>
+            <p class="card-text">An inherited form of muscular dystrophy, which occurs due to progressive muscle wasting
+              and muscle weakness.There are 2 types of it, in type 1 its' effects are more severe and life expectancy is
+              reduced.In type 2, the effects of it are milder and life expectancy is usually not affected</p>
+            <a href="https://www.mda.org/disease/myotonic-dystrophy" class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <div class="card-header">
+            Mainly affects the muscles in the upper-body, most people who suffer from this require a pace-maker to
+            enable their hearts to work normally
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Emery-dreifuss muscular dystrophy</h5>
+            <p class="card-text">Mainly affects the joints,muscles and heart, the joint symptoms(contractures of the
+              elbows, ankles and necks) usually viable during childhood(At around age 10). It is also on the slower side
+              of muscles degenerating and is usually only detectable during their early 20's. Intellectual ability is
+              also not affected.</p>
+            <a href="https://www.mda.org/disease/emery-dreifuss-muscular-dystrophy"
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <div class="card  bottomrowcards">
+          <div class="card-header">
+            This is one of the rare diseases where it affects both men and women equally
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Limb-gridle muscular dystrophy</h5>
+            <p class="card-text">Usually affects the muscles closest to the body, the pelvic,thigh,shoulders and upper
+              arms.The fourth most common type of muscular dystrophy.Occuring in 2 in every 100,000 people. It usually
+              affects people whom suffer from it in childhood to be more severe and those diagnosed with it in adulthood
+              are less severe and slow.</p>
+            <a href="https://www.mda.org/disease/limb-girdle-muscular-dystrophy"
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card  bottomrowcards">
+          <div class="card-header">
+            Mainly affects the muscles of the face, usually appear before age 20 to 40.
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">facioscapulohumeral Muscular dystrophy</h5>
+            <p class="card-text">This form of muscular dystrophy has 2 types, of FHSD type 1 and 2. It also does not
+              shorten life expectancy. Usually the most common sign of this disorder is that
+              people are unable to close their eyes during sleep. Usually around 90% of people who suffer from this
+              experience symptoms before the ages of 20. This disease occurs usually in 4 in every 100,000 people.</p>
+            <a href="https://www.mda.org/disease/facioscapulohumeral-muscular-dystrophy"
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card  bottomrowcards">
+          <div class="card-header">
+            This form of muscular dystrophy is the slowest form of muscular dystrophy usually taking only affect from
+            ages of 40-60
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">distal muscular dystrophy</h5>
+            <p class="card-text">Usually starts with weakness in arms and legs before gradually spreading to other parts
+              of the body with shrinking muscules.It usuallly begins
+              with the weakening of the hands,feet,lower arms or lower legs. If it is severe the muscles may degenerate
+              until a point where even mobility of the limb is difficult.</p>
+            <a href="https://www.mda.org/disease/distal-myopathies" class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card  bottomrowcards">
+          <div class="card-header">
+            This form of muscular dystrophy is more common in people whom are french-canadian,Ashkenazi,jewish and
+            hispanic.
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Oculopharyngeal muscular dystrophy</h5>
+            <p class="card-text">Mainly affects the muscles of the eyelids and parts of the throat, the pharyx.It occurs
+              in only 1 in every 100,000 people. Symptoms for this variation usually are only obvious until the 40-50
+              years old region.</p>
+            <a href="https://www.mda.org/disease/oculopharyngeal-muscular-dystrophy"
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card  bottomrowcards">
+          <div class="card-header">
+            This usually orcurs across all ages,people with this usually have loose and floopy muscles, with overly
+            flexible joints,contractures of the arms or legs, and decreased flexibility of the spine
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Collagen type vi-related disorders</h5>
+            <p class="card-text">Occurs as genes do not have the genetic information to help code for collagen type vi
+              proteins which is where it gets its' name from. Bethlem myopathy is the milder end of the spectrum while
+              UIIrich CMD(Congenital Myopath with contractures)representing the severe end of the spectrum, due to
+              little information, the age at which people are diagnosed is usually varied </p>
+            <a href="https://rarediseases.org/rare-diseases/collagen-type-vi-related-disorders/"
+              class="btn btn-primary  learnmore">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  
+    <hr>
+    <!-- page 5 -->
+    <div id="page5" class="row">
+      <h2>How you can help</h2>
+      <div id="World" class="col">
+        <div class="card shortcard" style="width: 18rem;">
+          <img src="images/MDAS image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Muscular Dystrophy Association Singapore(MDAS)</h5>
+            <p class="card-text">The main organisation in Singapore that focuses on helping people with muscular dystrophy
+              in Singapore, they offer oppurtunities to volunteer and donate</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="margin:auto"><a href="https://www.mdas.org.sg/about-md/">Main webpage</a>
+            </li>
+            <li class="list-group-item" style="margin: auto"><a
+                href="https://www.instagram.com/explore/locations/78521215/singapore/singapore/muscular-dystrophy-association-singapore/?hl=en"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li class="list-group-item" style="margin: auto">
+              <a href="https://www.facebook.com/MDASofficial/"><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+  
+        </div>
+  
+      </div>
+      <div class="col">
+        <div class="card  shortcard" style="width: 18rem;">
+          <img src="images/rainbow centre image.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rainbow center</h5>
+            <p class="card-text">This was the organisation my school had previously teamed up with, they not only help
+              people with muscular dystrophy but also other disabilities.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li style="margin:auto" class="list-group-item"><a href="https://www.rainbowcentre.org.sg/get-involved/">Main
+                webpage</a></li>
+            <li style="margin:auto" class="list-group-item"><a
+                href="https://www.instagram.com/rainbowcentresingapore/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            </a></li>
+            <li style="margin:auto" class="list-group-item"><a href="https://www.facebook.com/rainbowcentresg"><i
+                  class="fab fa-facebook"></i></a></a></li>
+          </ul>
+        </div>
+  
+      </div>
+      <div class="col">
+        <div class="card  shortcard" style="width: 18rem;">
+          <img src="images/enabling village img.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Enabling Village</h5>
+            <p class="card-text">Located in Redhill,this is not an Association but rather a place for people with
+              disabilities to be included into society with inclusive designs for all disabilities.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li style="margin:auto" class="list-group-item"><a
+                href="https://enablingvillage.sg/event/imable-gift-market-2021/">Support their upcoming events here! (26
+                nov- 31 dec)</a>!</li>
+            <li style="margin:auto" class="list-group-item"><a href="https://www.instagram.com/enablingvillage/"><i
+                  class="fab fa-instagram"></i></a></li></a></li></a></li>
+            <li style="margin:auto" class="list-group-item"><a href="https://www.facebook.com/EnablingVillageSG"><i
+                  class="fab fa-facebook"></i></a></a></li></a></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+  
+  
+  
+    </div>
+    <hr>
+  
+    <!-- Footer / Page 6 -->
+    <footer id="Page6">
+      <div class="row">
+  
+        <p class="col-4 mb-0 text-muted d-flex align-items-center justify-content-start ">Project Heartcode
+          <img src="images/Heartcode.gif" height="60px" width="60px">
+        </p>
+  
+        <a href="#start"
+          class="col-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <!-- insert icon here -->
+          <i class="fas fa-arrow-up"></i>
+          <h6>back to top!</h6>
+        </a>
+  
+        <p class="col-4 d-flex align-items-center justify-content-end">
+          Coded by Yong Sheng and paul
+          <img style="padding-left: 15px;" src="images/project heartcode 2.jpg" height="100px">
+        </p>
+  
+      </div>
+  
+    </footer>
+  </div>
+
+  <script>
+    function show_nav() {
+      sidenav = document.getElementById("sidenav")
+      sidenav.style.display = "block"
+    }
+
+    var shownav = false // false means invisible, true means visible, whenever button is clicked status changes from true to false or false to true
+    function change_nav_status() {
+      shownav = !shownav
+      console.log(shownav)
+    }
+
+    function update_change() {
+      sidenav = document.getElementById("sidenav")
+      console.log("updating change")
+      if (shownav == false) {
+        sidenav.style.display = 'none'
+        console.log("updated to invisible")
+      } else {
+        console.log("updated to visible")
+        sidenav.style.display = "block"
+      }
+    }
+
+    function hide_nav() {
+      sidenav = document.getElementById("sidenav")
+      sidenav.style.display = "none"
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggler</title>
+    <style>
+
+        body{
+            background-color: white;
+            transition: 0.5s;
+        }
+        p{
+            color: black;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggler">
+        <p> 
+            <label for="checkbox">This checkbox will be my theme toggler:</label> 
+            <input type="checkbox" id="checkbox" name="checkbox" onchange="changeTheme()">
+        </p>
+        <p id="theme-indicator">Current: Light </p>
+    </div>
+    <script>
+        function changeTheme(){
+            var checkbox = document.getElementById("checkbox");
+            if (checkbox.checked){
+                document.body.style.backgroundColor = "black";
+                document.getElementById("theme-indicator").textContent = "Current: Dark";
+                var pList = document.getElementsByTagName("p");
+                for (p of pList){
+                    p.style.color = "white";
+                }
+            }else{
+                document.body.style.backgroundColor = "white";
+                document.getElementById("theme-indicator").textContent = "Current: Light";
+                var pList = document.getElementsByTagName("p");
+                for (p of pList){
+                    p.style.color = "black";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

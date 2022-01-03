@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the card */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .container{
+            width: 100%;
+            padding-top:200px;
+        }
+        .card{
+            margin:auto;
+            background-image: url("images/image1.jpg");
+            background-size:contain;
+            background-repeat: no-repeat;
+            width:400px;
+            height: 500px;
+            /* Transition */
+            transition:0.5s ;
+        }
+        .card:hover{
+            /* Translate */
+            transform:translateY(-10px);
+            
+            /* Box Shadow */
+            box-shadow: 10px;px 1px 20px;
+        }
+        .description{
+            color:white;
+            background-color: black;
+            opacity: 0%;
+         background-color:rgba(0,0,0,0.5); 
+            height:100%;
+            width:100%;
+            /* Enter code */
+            font-size: 3em;
+            font-weight: bold;
+            transition: 0.5s
+        }
+        .card:hover .description{
+            /* Enter code */ 
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="description"> <!-- document.getElementByClass("description")[0].textcontent-->
+                This is the card's description
+            </div>
+        </div>
+    </div>
+</body>
+</html>

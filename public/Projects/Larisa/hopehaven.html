@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>Hope Haven</title>
+  <style>
+    /* Add the styles */
+    .navbar {
+      top: 0;
+      position: sticky;
+      z-index: 10;
+
+
+    }
+
+    .bg-personal {
+      background-color: #dfb160;
+    }
+
+    .jumbotron {
+      padding: 2px;
+      background-image: url("images/home-page-background.jpg");
+      background-size: cover;
+      height: 600px
+    }
+
+    #content {
+      height: 15em;
+    }
+
+    p {
+      max-width: 30em;
+      color: black;
+      font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin: 40px auto;
+      text-transform: lowercase;
+      line-height: 145%;
+      font-size: 2em;
+      font-variant: small-caps;
+    }
+
+    #addstorybutton {
+      margin-right: 5%;
+
+    }
+
+    #storycontainer {
+      padding: 50px;
+    }
+
+    #calmingsongsplaylist {
+      font-size: 3em;
+    }
+  </style>
+</head>
+
+<body onload="retrieveData()">
+  <!-- Add the navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-personal">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>HopeHaven</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#connect">Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stories">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cardbody">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Add the Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 id="welcome" class="display-4 text-center">Welcome</h1>
+      <!-- Button trigger modal -->
+
+      <div class="d-flex justify-content-center">
+        <button id="signupbutton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Sign Up
+        </button>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">How do we address you ?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <span class="input-group-text">Name</span>
+                <input id="username" type="text" aria-label="First name" class="form-control">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="addname()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quote Generator -->
+      <div id="content">
+        <p id="quote">"the people who are crazy enough to think they can change the world are the ones who do." <br />-
+          Steve Jobs</p>
+      </div>
+      <br>
+      <div class="d-flex justify-content-center">
+        <button id="genquotebutton" type="button" class="btn btn-light" onclick="genQuote()">New Quote</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add the cards , forums page -->
+  <div id="connect" class="card" style="width: fill;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">Forum Page</h5>
+      <p class="card-text">Share how you're feeling , don't keep it bottled up 😀</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">General Discussions <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Chat
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <ol id="forum-threads">
+              <li>
+
+
+              </li>
+            </ol>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-text">Chat</span>
+              <textarea id="forum-thread" class="form-control" aria-label="With textarea"></textarea>
+              <!-- close button for comments -->
+              <button type="button" class="btn btn-secondary" onclick="send()" data-bs-dismiss="modal">Send</button>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">Helpful tips</li>
+      <li class="list-group-item">Others</li>
+    </ul>
+
+    <!-- Dividing segment between connect and stories -->
+    <div id="stories" class="card-body">
+      <h5 class="card-title">Stories</h5>
+      <p class="card-text">There is always a rainbow after the storm , here are some personal stories of how people
+        overcame their struggles, so don't give up just yet !</p>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button id="addstorybutton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#storymodal">
+        Add Story
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="storymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Your Survival Story !</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <textarea id="storyinput" class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="addstory()">Submit Story</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="storycontainer" class="container">
+      <div class="row">
+
+        <!-- Actual place where you can put the stories -->
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Bottling up feelings :</b></h5>
+              <br> I struggle to open up to family, friends and pretty much anyone else in my life. i dont tell anyone
+              things i think they can use against me. and it is so draining. recently i started work and my parents are
+              trying to get me to open up more to them, i feel forced to but ultimately its helping me build my
+              confidence around other people. i love working and talking to people. it helps my anxiety, its like i can
+              talk to complete strangers fine but not people i know. its weird. my advice is to try and open up. dont
+              bottle up feelings because they can eat you up inside.
+              <p id=story class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><b>Bullying:</b></h5>
+              <br> In primary school I was bullied for 3 years which was most of primary school. It
+              got to the point where I didn't like life but then I built up the courage to stand up for myself and it
+              all got better and luckily, I got to have the best last two years of school with my friend. The moral of
+              the story : to stand up for yourself.
+              <p id=story class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><b>My Mother :</b></h5>
+              <br>My mother died on Mothers' Day. I realised that it's ok to cry. It's ok to miss her but you have to
+              keep moving forward. I had responsibilities to look after like my sisters and brothers , and my niece and
+              nephew. Even though she was my life, my moon , my stars , my life , I had to let her go. I see her in the
+              flowers outside, in my family , in myself. I will miss her but I have friends and family to talk to when I
+              feel down. So in conclusion, if you're upset then talk to people. It does help. xox
+              <p id=story class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Resource music playlist  division bar and cards -->
+
+    <div id="storycontainer" class="container">
+      <div class="row">
+
+
+        <div id="cardbody" class="card-body">
+          <h5 class="card-title">Resources</h5>
+          <p class="card-text">When you're down , we'll be around , here are some things that might help cure your blues
+            !</p>
+        </div>
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/Calming image 1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 id="calmingsongsplaylist" class="card-title">Calming Songs Playlist</h5>
+              <p"card-text"> Music is effective for relaxation and stress management as a slower tempo can quiet your
+                mind
+                and relax your muscles, making you feel soothed while releasing the stress of the day.</p>
+                <a style="font-size: 2em; text-decoration: underline"
+                  href="https://youtube.com/playlist?list=PLeXTiEpR2lzXcBXl-g_n3oEkulGpNboAr">Calming Music Playlist
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/Self worth pic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 id="calmingsongsplaylist" class="card-title">You Are Enough</h5>
+              <p"card-text"> Sometimes we feel so down and forget that there are so many amazing things about ourselves
+                , here's a website that lists 5 great things you can do on a daily basis. Remember , we all have flaws ,
+                it's better to look at our achievements instead because it's what makes us special :)
+                </p>
+                <a style="font-size: 2em; text-decoration: underline"
+                  href="https://au.reachout.com/articles/5-ways-to-feel-better-about-yourself">5 ways to feel better
+                  about yourself
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/helping hand pic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 id="calmingsongsplaylist" class="card-title">Ask for help</h5>
+              <p"card-text">Sometimes it's really hard to ask for help , some may fear being judged , others' don't want
+                their loved ones to know they are struggling , but sometimes if you need to let off some steam or when
+                your bottle of emotions is full , you might want a listening ear or a shoulder to cry on , so here are
+                some numbers you can dial for anything that you may be experiencing or may need help with.
+                </p>
+                <a style="font-size: 2em; text-decoration: underline"
+                  href="https://stayprepared.sg/mymentalhealth/i-need-support-now/">Reach out to someone
+                </a>
+            </div>
+          </div>
+        </div>
+
+
+        <script>
+          // Script to change the theme
+          function addname() {
+            var username = document.getElementById("username").value;
+            localStorage.setItem("username", username);
+            document.getElementById("welcome").innerHTML += " " + username + "!";
+
+          }
+          function genQuote() {
+            var randNum = Math.floor(Math.random() * 8) + 1;
+            document.getElementById('quote').innerHTML = quotes[randNum];
+          }
+          //quote array
+          var quotes = ["Blank", "\"Dude, suckin' at something is the first step at being sorta good at something.\"<br>-  Jake <small><em>(Adventure Time)</em></small>", "\"Either I will find a way, or I will make one.\"<br> - Philip Sidney", "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"<br>- Thomas A. Edison", "\"You are never too old to set another goal or to dream a new dream.\"<br>- C.S Lewis", "\"If you can dream it, you can do it.\"<br>- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"<br>- Muhammad Ali",];
+
+          function send() {
+            var username = localStorage.getItem("username");
+            var thread = document.getElementById("forum-thread").value;
+            document.getElementById("forum-threads").innerHTML += "<li>" + username + " : " + thread + "</li>"
+
+            // store data          
+            var posts = JSON.parse(localStorage.getItem("posts"));
+            posts.push({
+              "Username": username,
+              "Post": thread,
+            });
+            localStorage.setItem("posts", JSON.stringify(posts));
+          }
+          function retrieveData() {
+            var username = localStorage.getItem("username");
+            document.getElementById("welcome").innerHTML += " " + username + "!";
+            if (localStorage.getItem("posts") != null) {
+
+              var posts = JSON.parse(localStorage.getItem("posts"));
+
+              for (var i = 0; i < posts.length; i++) {
+                document.getElementById("forum-threads").innerHTML += "<li> " + posts[i].Username + " : " + posts[i].Post + "</li>"
+              };
+
+            } else {
+              // CREATE new data
+              localStorage.setItem("posts", JSON.stringify([]));
+
+            }
+          }
+
+          function addstory() {
+            document.getElementById("storyinput").value = "Thank you for sharing! Your story will be uploaded soon , feel free to submit another story too ! :)"
+
+          }
+
+        </script>
+</body>
+
+</html>

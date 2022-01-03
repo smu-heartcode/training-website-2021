@@ -1,0 +1,145 @@
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.jumbotron{
+    height: 500px;
+    background-image: url("https://gcn.com/-/media/GIG/EDIT_SHARED/Cities/visuallyimpairedsmartphone.png");
+    background-size: cover;
+    background-position-x: right;
+}
+.display-4{
+    padding-top: 100px;
+    opacity: 100%;
+}
+#Statistics{
+    height: 800px;
+    background-color: rgb(27, 27, 27);
+    
+    
+}
+.statscontent{
+    color: rgb(255, 255, 255);
+    
+    padding: 100px;
+    text-align: center;
+}
+.circle1{
+    /* border-radius: 0%; */
+    background: white;
+    height: 400px;
+    width : 400px;
+    /* margin-right: 100px; */
+    /* margin-left: 100px; */
+    
+    
+    
+}
+.circle2{
+    /* border-radius: 0%; */
+    background: white;
+    height: 400px;
+    width : 400px;
+    /*margin-right: 100px;*/
+
+}
+.jumbotron2{
+    height: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQrDkqbVJw58JxDk1cbbilhXY7uTnGUs9hTg&usqp=CAU");
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+.challenges{
+    height: 800px;
+}
+.card-img-top{
+    height: 200px;
+}
+.card{
+    margin :40px;
+}
+.card-group{
+    margin-bottom: 50px;
+}
+.carousel-inner{
+    height: 600px;
+}
+.carousel-item{
+    height: 500px;
+}
+.s0{
+    padding-right: 450px; 
+    
+}
+.s1{
+    padding-right: 450px;
+    height: 100px;
+}
+.s2{
+    padding-right: 450px;
+    height: 100px;
+}
+/* h4{
+    margin-left:50px;
+} */
+.btn-dark{
+    margin-left: 20px;
+
+}
+.dot {
+    margin: 0px 30px;
+    height: 400px;
+    width: 400px;
+    background-color: #bbb;
+    border-radius: 50%;
+     display: inline-block; 
+     position: relative;
+
+  }
+.in-dot{
+    width: 250px;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left:20%;
+    text-align: center;
+    
+}
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow: 5px 5px 5px black ;
+    transition: 0.15s;
+}
+.title{
+    text-align: center;
+}
+.jumbotron3{
+    height:250px;
+    background-image: linear-gradient(to bottom,black,white);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.words{
+    color: white;
+    text-align: center;  
+}
+.cgroup{
+    background-image: linear-gradient(to bottom ,white,black);
+    height: 200px;
+}
+.jump{
+    opacity: 0%;
+    background-image: linear-gradient(to bottom right, grey,white);
+    
+}
+.jump:hover{
+    opacity: 100%;
+    transition: 0.15s;
+}
+.carousel-inner{
+    height: 500px;
+}

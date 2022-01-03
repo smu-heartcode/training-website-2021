@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="icon" href="images/give-love.png">
+  <title>A Helping Hand</title>
+  <style>
+    .card:hover{
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      transition: all .55s ease-in-out;
+    }
+    .jumbotron {
+      background: url("images/parent-comforting-grieving-teen.jpg") no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      color:whitesmoke;
+      background-color: aliceblue; 
+    }
+
+    .navbar {
+      top: 0;
+      position: sticky;
+      z-index: 10;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Roboto+Slab:wght@300&display=swap');
+    .intro{
+      font-family: 'Roboto Slab', serif;
+      background-color:#66669a;
+      color:white
+    }
+    .card{
+      background-color: whitesmoke;
+    }
+    .card-title{
+      color: black;
+    }
+    .card-text{
+      color: grey;
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Bootstrap page.htmlz">
+        <img src="images/give-love.png" alt="" width="30" height="25" class="d-inline-block align-text-top">
+        A Helping Hand
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="links.html">Useful Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="helplines.html">Helplines</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+      Themeㅤ
+      <div class="form-check form-switch"> 
+        <input class="form-check-input" type="checkbox" id="theme-toggler" onchange="changeTheme()"> 
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron bg-cover text-white jumbotron-fluid" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url(https://i0.wp.com/www.mygbhp.com/wp-content/uploads/parent-comforting-grieving-teen.jpg)">
+    <div class="container">
+      <h1 class="display-4">A Helping Hand</h1>
+      <p class="lead">Depression can be a complicated topic, but we are here to help.</p>
+    </div>
+  </div>
+  
+  <div class="intro">
+    <p>ㅤ</p>
+    <h1 class="text-center">- About Us -</h1>
+    <h4 class="p-5">A Helping Hand aims to educate parents with youths about depression and their causes.
+      </br></br>
+      <p>At A Helping Hand, we strive to help every parent be well-versed in the evident signs of depression and know what is the best course of action to take for their child.</p>
+    </h4>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/what are the signs.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">What is Depression?</h5>
+            <p class="card-text">Introduction to Depression</p>
+            <p>ㅤ</p>
+            <a href="what is d pg2.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/what causes depression.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">What causes depression in youths?</h5>
+            <p class="card-text">Factors that affect the mental health of youths</p>
+            <a href="what cause d pg2.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/what is depression.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">What are the signs of depression?</h5>
+            <p class="card-text">And how you can detect them easily</p>
+            <a href="what signs pg2.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <img src="images/what shld u do.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">What should you do?</h5>
+            <p class="card-text">Helping your child in the best way possible</p>
+            <a href="what todo pg2.html" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeTheme() {
+      var toggler = document.getElementById("theme-toggler");
+      if (toggler.checked) {
+        document.body.style.backgroundColor = "#3d3d3d";
+        document.getElementsByTagName("nav")[0].classList.add("navbar-dark");
+        document.getElementsByTagName("nav")[0].classList.add("bg-dark");
+        document.getElementsByTagName("nav")[0].classList.remove("navbar-light");
+        document.getElementsByTagName("nav")[0].classList.remove("bg-light");
+        document.body.style.color = "white";
+        // document.
+        return
+      }
+      document.getElementsByTagName("nav")[0].classList.remove("navbar-dark");
+      document.getElementsByTagName("nav")[0].classList.remove("bg-dark");
+      document.getElementsByTagName("nav")[0].classList.add("navbar-light");
+      document.getElementsByTagName("nav")[0].classList.add("bg-light");
+      document.body.style.backgroundColor = "white"
+      document.body.style.color = "black";
+
+    }
+  </script>
+</body>
+
+</html>

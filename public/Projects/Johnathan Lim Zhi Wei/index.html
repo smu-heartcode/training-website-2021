@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Youths with Depression</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: white !important;
+        }
+
+        .jumbotron {
+            background: url("images/OepA4Dbx_4x.jpg") no-repeat center center;
+            background-size: cover;
+            height: 550px;
+            min-height: 100vh;
+            align-items: center;
+            display: flex;
+            object-fit: cover;
+        }
+
+        .img-car {
+            height: 400px !important;
+            object-fit: contain !important;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+
+        }
+
+        .card-help {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .card-help:hover {
+            /* border<line-width>color:black solid 1px; */
+            box-shadow: 5px 5px 5px black;
+            transform: translateY(-15px);
+        }
+
+        .carousel slide {
+            height: 85 px;
+            object-fit: contain;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev
+
+        /*, .carousel-indicators */
+            {
+            filter: invert(100%);
+        }
+
+        .row1 {
+            background-color: #E8E2E4;
+        }
+
+        .row2 {
+            background-color: #FFBD9F;
+        }
+
+        .row3 {
+            background-color: #F9E9D9;
+        }
+
+        .A {
+            font-size: 14pt;
+        }
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        * {
+            scrollbar-width: auto;
+            scrollbar-color: #578D8D white;
+        }
+
+        /* Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: white;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #578D8D;
+            border-radius: 2px;
+        }
+
+        .navbar {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .hide-image {
+            overflow: hidden;
+        }
+
+        .card-signs {
+            text-align: center;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #578D8D;
+
+        }
+
+        #blink {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
+        }
+
+        @keyframes caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="1000">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b><i>Project HeartCode Website</i></b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Reason for Concerns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5">Common signs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section6">Resources</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Help Button -->
+    <button type="button" class="btn btn-warning px-4 py-2" style="position:fixed;bottom: 65px;right:50px;z-index:999;"
+        data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        <b>Seek Help</b>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Helpline</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="card card-help h-100 m-3" style="width: 18rem;">
+                            <img src="images/images.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Samaritans Of Singapore(SOS)</h5>
+                                <p class="card-text">Emergency helplines for youths in need</p>
+                                <a href="https://www.sos.org.sg/" target="_blank" class="btn btn-primary">Click Here</a>
+                            </div>
+                        </div>
+                        <div class="card card-help h-100 m-3" style="width: 18rem;">
+                            <img src="images/download.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">TOUCH Youth Intervention</h5>
+                                <p class="card-text">Counselling for mental health and youth issues</p>
+                                <a href="https://bit.ly/324zy1W" target="_blank" class="btn btn-primary">Click Here</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-help h-100 m-3" style="width: 18rem;">
+                            <img src="images/fb-share.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CHAT</h5>
+                                <p class="card-text">Personalised and confidential mental health check for young people
+                                    aged
+                                    16-30</p>
+                                <a href="https://chat.mentalhealth.sg/" target="_blank" class="btn btn-primary">Click
+                                    Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="section1">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Youths with Depression</h1>
+                <!-- <p class="lead">Watch the video below to find out more about youth depression</p> -->
+                <h5 id="typewriter">Some key facts here</h5>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class="bi bi-youtube"></i>
+                    What is youth depression?
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/5q7BwQeOZsU" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reasons Section -->
+    <div id="section3" class="container-fluid">
+
+        <div class="row">
+            <div class="col-12 row1 py-4">
+
+                <h2><b>Why should you be concerned?</b></h2>
+            </div>
+            <!-- Part One-->
+            <div class="col-12 col-md-6 p-5 row1 hide-image ">
+                <img data-aos="fade-right" class="w-100"
+                    src="https://programminglibrarian.org/sites/default/files/guilt-tn.jpg">
+            </div>
+            <div class="col-12 col-md-6 row1">
+
+                <div class="d-flex align-items-center h-100">
+                    <div>
+                        <span class="A">There is a lack of about this growing problem in Singapore.
+                            Without any concrete steps taken towards alleviating this problem and its root causes, the
+                            problem will only continue to grow and affect more youths negatively which makes it very
+                            relevant and an issue of concern to society</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Part Two-->
+            <div class="col-12 col-md-6 p-5 row2">
+                <div class="d-flex align-items-center h-100">
+                    <div>
+                        <span class="A">Youths with depression often face challenges in seeking help as
+                            there is a very prevalent social stigma around mental issues with the majority of society
+                            still seeing youths with mental issues as “weak”</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 row2 hide-image">
+                <img src="http://www.bibalex.org/SCIplanet/Attachments/Article/MediumImage/vychpzdBQr_20201209101513775.jpg"
+                    class="w-100" data-aos="fade-left">
+
+            </div>
+
+
+
+
+            <!-- Part Three-->
+
+            <div class="col-12 col-md-6 p-5 row3 hide-image">
+                <img src="images/Capture.png" class="w-75" data-aos="fade-right">
+            </div>
+            <div class="col-12 col-md-6 row3">
+
+                <div class="d-flex align-items-center h-100">
+                    <div>
+                        <span class="A">Currently, the Singapore Government has started to take steps to
+                            tackle youth mental health issues but there is consensus among experts that the social
+                            stigma around this is still far from solved
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </br>
+    </br>
+    </br>
+    <!-- Stats Section -->
+    <div id="section4" class="container-fluid">
+        <h2><b>Statistics</b></h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.bloom.com.sg/wp-content/uploads/2017/10/Mental-Health-Statistics-Singapore.jpg"
+                        class="d-block w-100 img-car" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo.jpg" class="d-block w-100 img-car" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/H9QMLaGe_4x.jpg" class="d-block w-100 img-car" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    </br>
+    </br>
+    </br>
+
+    <div id="section5" class="container-fluid">
+
+        <h2><b>Common signs of depression(Not Exhaustive)</b></h2>
+
+        <div class="row d-flex justify-content-center g-4">
+            <div class="col">
+                <div class="card h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">🥲</span>
+                        <h5 class="card-title">Feeling sad, guilty or helpless</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😔</span>
+                        <h5 class="card-title">Reduced sense of self-worth</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">🥱</span>
+                        <h5 class="card-title">Loss of interest in activities</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😴</span>
+                        <h5 class="card-title">Insomnia or excessive sleeping</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">🤢</span>
+                        <h5 class="card-title">Digestive problems</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+
+                <div class="card  h-100 card-signs  m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😰</span>
+                        <h5 class="card-title">Physical aches</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+
+                <div class="card  h-100 card-signs  m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">🥪</span>
+                        <h5 class="card-title">Changes in weight or appetite</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+                <div class="card  h-100 card-signs  m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😒 </span>
+                        <h5 class="card-title">Trouble focusing and making decisions</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card  h-100 card-signs  m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😠</span>
+                        <h5 class="card-title">Restlessness</h5>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😢</span>
+                        <h5 class="card-title">Pessimism</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😡</span>
+                        <h5 class="card-title">Irritability</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card  h-100 card-signs m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <span style="font-size: 100px;">😵</span>
+                        <h5 class="card-title">Suicidal thoughts or attempts</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    </br>
+    </br>
+    </br>
+
+
+    <div id="section6" class="container-fluid">
+        <h2><b>Resources for further reading</b></h2>
+
+        <div class="list-group">
+            <a href="https://www.healthhub.sg/live-healthy/1179/helping-youth-fight-depression" target="_blank"
+                class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">HealthHub</h5>
+                </div>
+                <p class="mb-1">How you can help combat youth depression</p>
+            </a>
+            <a href="https://bit.ly/30yzOpC"
+                class="list-group-item list-group-item-action flex-column align-items-start" target="_blank">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">IMH-MOH-NTU epidemiological study on mental illness</h5>
+                </div>
+                <p class="mb-1">The first nationwide epidemiological study on mental illness in Singapore</p>
+
+                <a href="https://www.nyc.gov.sg/-/media/mccy/projects/nyc/files/innitiatives/resource/final_yplus_mental-health.ashx?la=en&hash=8EE54E7F174E9252EF5F227BEB0A0BBFF680D563"
+                    class="list-group-item list-group-item-action flex-column align-items-start" target="_blank">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">National Youth Council Y+ E-Newsletter</h5>
+                    </div>
+                    <p class="mb-1">Y+ is an E-Newsletter that seeks to helps you stay in touch with the constantly
+                        evolving youth scene</p>
+                </a>
+
+
+
+
+
+
+            </a>
+
+
+        </div>
+
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+
+
+
+
+
+
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            // array with texts to type in typewriter
+            var dataText = ["~18% of Singapore’s youths suffer from depression with children and young adults facing a higher chance of developing depression and anxiety.", "Some long term health impacts of youth depression range from sleep disorders, gastrointestinal infections and a higher risk of premature death."];
+
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+                // chekc if text isn't finished yet
+                if (i < (text.length)) {
+                    // add next character to h1
+                    document.getElementById("typewriter").innerHTML = text.substring(0, i + 1) + '<span id="blink" aria-hidden="true"></span>';
+
+                    // wait for a while and call this function again for next character
+                    setTimeout(function () {
+                        typeWriter(text, i + 1, fnCallback)
+                    }, 75);
+                }
+                // text finished, call callback if there is a callback function
+                else if (typeof fnCallback == 'function') {
+                    // call callback after timeout
+                    setTimeout(fnCallback, 100);
+                }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+                if (typeof dataText[i] == 'undefined') {
+                    setTimeout(function () {
+                        StartTextAnimation(0);
+                    }, 1);
+                }
+                // check if dataText[i] exists
+                if (i < dataText[i].length) {
+                    // text exists! start typewriter animation
+                    typeWriter(dataText[i], 0, function () {
+                        // after callback (and whole text has been animated), start next text
+                        StartTextAnimation(i + 1);
+                    });
+                }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+        });
+    </script>
+
+
+</body>
+
+</html>

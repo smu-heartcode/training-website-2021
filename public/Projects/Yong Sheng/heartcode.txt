@@ -1,0 +1,15 @@
+1.Fix sidebar links
+2.background images
+3.resize video
+4.fix format
+5.fix bottom right of webpage
+
+7.CDAC image (optional) Maybe include logo,facebook,ig (optional)
+9. language change code(optional)
+10.dark mode toggler (optional, copy and paste)
+11.comments section(optional)
+12.rehearse presentation
+13. add a more resources button
+
+
+Completed:6.More videos (done)

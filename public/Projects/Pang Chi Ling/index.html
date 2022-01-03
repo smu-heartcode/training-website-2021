@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Pang Chi Ling</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        .jumbotron{
+          /* the linear gradient thing is for the opacity of the image */
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url("./Dementia image.jfif");
+        background-size: cover;
+        height: 550px;
+        align-items: center;
+        display: flex;
+        /* the .words whatnot are the classes we're refering to to change a property about it */
+      }
+      .container{
+        color: #d7bafd;
+        align-items: center;
+        text-align: center;
+      }
+      .display-1{
+        font-size: 100px;
+        margin-bottom: -10px;
+      }
+      .lead{
+        font-size: 30px;
+      }
+    .navbar{
+        position:sticky;
+        top:0;
+        /* z-index:99; is basically allowing the selected element to be ontop of every layer of everything. Text, images, cards, etc! */
+        z-index:99;
+        
+    }
+    .Dementia{
+      min-height: 560px;
+      background-color: #803fca;
+      color: #d7bafd;
+      display:flex;
+      align-items: center;
+      justify-content: center;   
+    }
+    .card-header{
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      color: #97557f;
+    }
+    .card-text{
+      font-size: 30px;
+      color: #97557f;
+      font-family: "Poppins", sans-serif; 
+      /* We got the font family of the Poppins by Google Fonts, copying the url and pasting it right after style starts as an importing url*/
+;
+/* The semicolon above this text will stay here forever till it disappears mysteriously. */
+    }
+    .card-dementia{
+      background-color: #ddbecf;
+      border-radius: 2rem;
+      border-color: #c69eb4;
+      border-style:solid ;
+      border-width: 10px;
+    }
+    .challenge{
+      background-color: #6628ad;
+      justify-content: center;
+      color: #d7bafd;
+      padding: 2rem;
+      min-height: 560px;
+    }
+    .card{
+      width: 300px;
+      margin-left: 40px;
+    }
+    .card-img-top{
+      height: 175px;
+      width: 299px;
+    }
+    .card-title{
+      color: #97557f;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .challenge-header{
+      justify-content: center;
+      display: flex;
+      margin-bottom: 4rem;
+    }
+    .help{
+      background-color: #803fca;
+      justify-content: center;
+      color: #d7bafd;
+      padding: 2rem;
+      min-height: 560px;
+    }
+    .video{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .card-helpline{
+      background-color: #ddbecd;
+      border-style: solid;
+      border-color: #c69eb4;
+      padding: 0.2rem;
+      border-width: 10px;
+    }
+    .helpline{
+      background-color: #6628ad;
+      min-height: 560px;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .helpline-header{
+      color: #ddbecd;
+      justify-content: center;
+      display: flex;
+      font-size: 50px;
+      margin-bottom: 3rem;
+    }
+    .card-header-helpline{
+      color: #97557f;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .dropdown-menu{
+      background-color: #b16dff;
+    }
+    .card-title-helpline{
+      color: #97557f;
+    }
+    .col{
+      margin-bottom: 2rem;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b16dff;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>Dementia</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Know More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#What">What is Dementia?</a></li>
+                  <li><a class="dropdown-item" href="#Challenge">What are the challenges?</a></li>
+                  <li><a class="dropdown-item" href="#How">How can we help?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Helpline">Helpline</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-1"><b>Dementia</b></h1>
+      <p class="lead">All you need to know</p>
+    </div>
+</div>
+<div class="Dementia">
+  <div class="card-dementia text-white mb-3" style="max-width: 60rem;" id="What">
+    <div class="card-header">What is Dementia?</div>
+    <div class="card-body">
+      <p class="card-text">Dementia is not a specific disease but is rather a general term for the impaired ability to remember, think, or make decisions that interferes with doing everyday activities.</p>
+        <p class="card-text">Alzheimer's disease is the most common type of dementia. Though dementia mostly affects older adults, it is not a part of normal aging.</p>
+    </div>
+  </div>
+  <p></p>
+</div>
+<!-- <div class="Dementia challenge">
+  <div class="card-dementia text-white mb-3" style="max-width: 60rem;" id="Challenge">
+    <div class="card-header">What is Dementia?</div>
+    <div class="card-body">
+      <p class="card-text">Dementia is not a specific disease but is rather a general term for the impaired ability to remember, think, or make decisions that interferes with doing everyday activities.
+        <br>
+        Alzheimer's disease is the most common type of dementia. Though dementia mostly affects older adults, it is not a part of normal aging.</p>
+    </div>
+  </div>
+  <p></p>
+</div> -->
+<!-- That whole bunch of code became a comment because lazy delete ig -->
+
+<!-- This is the challenge page -->
+<div class="challenge" id="Challenge">
+  <H1 class="challenge-header">Challenges people with dementia face</H1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./Loss of memory challenge.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Loss of memory and cognitive thinking</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./Hard to make decisions challenge.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hard for them to make decisions</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./Change in mood challenge.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Changes in mood and/or behaviour</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./General confusion challenge.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Disorientation and general confusion</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./Can't speak challenge.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Loss of ability to speak or hold conversations</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./Can't focus challenge.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Struggle to stay focused for a long time</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- This is the help page -->
+<div class="help row" id="How">
+  <H1 class="challenge-header">How can we help people with dementia?</H1>
+  <div class="video">
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/PunadLPGlgE">
+    </iframe>
+  </div>
+</div>
+<!-- This is the helpline page -->
+
+<div class="helpline" id="Helpline">
+  <H1 class="helpline-header">Helplines</H1>
+  <div class="card-helpline">
+    <div class="card-header-helpline">
+      Dementia Helpline (Alzheimer's Disease Association, Caregiver Support Service)
+    </div>
+    <div class="card-body">
+      <h5 class="card-title-helpline">Helpline: 6377 0700</h5>
+      <p class="card-text"></p>
+      <a href="https://dementia.org.sg/css/" target="_blank" rel="noopener noreferrer"
+       class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+<br>
+  <div class="card-helpline">
+    <div class="card-header-helpline">
+      SAGE Counselling Centre - Jurong Point
+    </div>
+    <div class="card-body">
+      <h5 class="card-title-helpline">Helpline: 6354 1191</h5>
+      <p class="card-text"></p>
+      <a href="http://www.sagecc.org.sg/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+      >Learn More</a>
+    </div>
+  </div>
+<br>
+  <div class="card-helpline">
+    <div class="card-header-helpline">
+      Tsao Foundation Hua Mei Training Centre
+    </div>
+    <div class="card-body">
+      <h5 class="card-title-helpline">Helpline: 6593 9547</h5>
+      <p class="card-text"></p>
+      <a href="https://tsaofoundation.org/doc/NSA_Orientation_to_Dementia.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+      >Learn More</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Never going to give you up -->
+<!-- Bruh why did you scroll all the way down even though it's just empty :woman-facepalming: -->
+<!-- That's why you got rick rolled heh -->
