@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{208:function(e,n,t){"use strict";t.r(n);var r=t(6),component=Object(r.a)({},(function(){var e=this.$createElement;this._self._c;return this._m(0)}),[function(){var e=this.$createElement,n=this._self._c||e;return n("div",[n("h1",[this._v("Learning the Sign Language")])])}],!1,null,null,null);n.default=component.exports}}]);

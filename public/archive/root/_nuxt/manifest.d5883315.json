@@ -1,0 +1,11 @@
+{
+  "name": "web-dev-materials",
+  "short_name": "web-dev-materials",
+  "description": "![Generic badge](https://img.shields.io/badge/STATUS-DRAFT-blue.svg)",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "black",
+  "lang": "en"
+}
