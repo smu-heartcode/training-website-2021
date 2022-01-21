@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <p>Created for Project HeartCode 2021</p>
-    <p>Do send your enquiries to Project Leader <a href = "mailto: tlcheow.2019@scis.smu.edu.sg">here</a></p>
+    <p>Created for Project HeartCode 2021<br>
+    Do send your enquiries to Project Leader <a href = "mailto: tlcheow.2019@scis.smu.edu.sg">here</a></p>
   </footer>
 </template>
 <script></script>
